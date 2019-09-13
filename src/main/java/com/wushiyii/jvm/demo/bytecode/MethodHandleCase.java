@@ -25,6 +25,5 @@ public class MethodHandleCase {
         //lookup()的作用为在指定类中查找指定的方法名称、方法类型、符合调用权限的方法句柄
         //bindTo可以绑定接受对象
         return lookup().findVirtual(receiver.getClass(), "println", methodType).bindTo(receiver);
-
     }
 }
